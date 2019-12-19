@@ -5,44 +5,35 @@
  * Version : $
  */
 
-import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.lang.System;
-import java.lang.*;
-//These do not to be imported as it auto imported
-
-//import java.util.*;
-//imports classes from java.util package
-import java.sql.Date;
-//import java.util.Date;
 import java.util.Random;
 
 /**
  * @author Davide Capomagi
  * @since 19 Dec 2019
  */
-public class packages
+public class constructors
 {
 	public static void main(String[] args)
 	{
+		Swan mother = new Swan();
+		mother.numberEggs = 1; //set variable
+		System.out.println(mother.numberEggs); //read variable
+
+	}
+
+	public static void constructors()
+	{
+		//declare type, then name, then create the object:
 		Random r = new Random();
-		System.out.println(r.nextInt(10));
+		//Random() - () are constructor
+		// no return type (e.g public void Random(){} - a method)
 	}
 
-	public static void read(Files files) {
-		Paths.get("name");
-		//how can we reduce the number of imports for this?
+	public static class Swan {
+		int numberEggs; //instance variable
 	}
 
-	public static void conflicts(){
-		//this is part of java util
-		// also part of java.sql.Date
-		// so what happens if java.sql.* is used?
-		// explict import always take precdence
-		// What happens if we explcitly define both?
-		Date date;
-	}
+
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary
