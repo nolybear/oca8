@@ -9,39 +9,22 @@
  * @author Davide Capomagi
  * @since 19 Dec 2019
  */
-public class defaultInitialization
+public class VariableScope
 {
-static int thisisaClassVariable = 5;
-	public static void main(String[] args)
+	public void eatMore(boolean hungry, int amountOfFood)
 	{
-
-	}
-
-	public void localVariable{
-		int y = 10;
-		//defined with method
-	int z; // is declared here
-//	int reply = z; - needs to be intialized before use
-	z = 3; //is now initalized
-	int reply = z;
-
-	}
-
-	public void findAnswer(boolean boo)
-	{
-		int a,b;
-		if(boo)
+		int roomInBelly = 5;
+		if (hungry)
 		{
-			a=3;
-			b=4;
+			boolean timeToEat = true;
+			while (amountOfFood > 0)
+			{
+				int amountEaten = 2;
+				roomInBelly = roomInBelly - amountEaten;
+				amountOfFood = amountOfFood - amountEaten;
+			}
 		}
-		else
-		{
-			a=4;
-		}
-		//which will not be valid?
-//		System.out.println(a);
-//		System.out.println(b);
+		System.out.println(amountOfFood);
 	}
 }
 /* ---------------------------------------------------------------------*
