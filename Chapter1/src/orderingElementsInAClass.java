@@ -13,7 +13,7 @@ public class orderingElementsInAClass
 {
 	//Package,Import,Class
 	//fields and methods inside a class
-	//can have comments anywhere aslong as it follows the correct order
+	//can have comments anywhere as long as it follows the correct order
 }
 
 //can have multiple classes in same file, but only 1 is public

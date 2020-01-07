@@ -17,6 +17,21 @@ public class DestroyingObjects
 System.gc();
 	}
 
+	public static void main (String[] args) {
+		String one, two; // no objects yet
+		// now objects are being created - this are added to the heap
+		// the object doesn't have a name, can only be accessed by a reference (e.g one or two)
+		one = new String("a");
+		two = new String("b");
+		// now one points to the two object -> the object (in this case "a") is eligable for collection
+		one = two;
+		//three is pointing to "b" not "a"
+		String three = one;
+		one = null;
+	}
+
+	//finalize() call cound run zero or one time - only runs if objecrt is eligble for garbage collection
+
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary
