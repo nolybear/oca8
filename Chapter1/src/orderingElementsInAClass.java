@@ -1,49 +1,25 @@
 /**
  * Copyright © 2019 Lhasa Limited
- * File created: 19 Dec 2019 by Mark Nolan
+ * File created: 07 Jan 2020 by Mark Nolan
  * Creator : Mark Nolan
  * Version : $
  */
 
 /**
  * @author Davide Capomagi
- * @since 19 Dec 2019
+ * @since 07 Jan 2020
  */
-public class defaultInitialization
+public class orderingElementsInAClass
 {
-static int thisisaClassVariable = 5;
-	public static void main(String[] args)
-	{
-
-	}
-
-	public void localVariable(){
-		int y = 10;
-		//defined with method
-	int z; // is declared here
-//	int reply = z; - needs to be intialized before use
-	z = 3; //is now initalized
-	int reply = z;
-
-	}
-
-	public void findAnswer(boolean boo)
-	{
-		int a,b;
-		if(boo)
-		{
-			a=3;
-			b=4;
-		}
-		else
-		{
-			a=4;
-		}
-		//which will not be valid?
-//		System.out.println(a);
-//		System.out.println(b);
-	}
+	//Package,Import,Class
+	//fields and methods inside a class
+	//can have comments anywhere aslong as it follows the correct order
 }
+
+//can have multiple classes in same file, but only 1 is public
+//public has to have same name as file
+
+class haha{}
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary
  * information of Lhasa Limited

@@ -12,15 +12,16 @@
 public class VariableScope
 {
 	public void eatMore(boolean hungry, int amountOfFood)
+			// hungry is a method parameter, scope local to method
 	{
-		int roomInBelly = 5;
+		int roomInBelly = 5; // available throughtout method
 		if (hungry)
 		{
-			boolean timeToEat = true;
+			boolean timeToEat = true; //avaiable in if block
 			while (amountOfFood > 0)
 			{
 				int amountEaten = 2;
-				roomInBelly = roomInBelly - amountEaten;
+				roomInBelly = roomInBelly - amountEaten; //avaiable in while block
 				amountOfFood = amountOfFood - amountEaten;
 			}
 		}
