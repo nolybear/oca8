@@ -57,6 +57,13 @@ public class PrimativeAndReferenceTypes
 //		int bad = len.length - prim do not have methods declared on them
 		//prim lowercase, ref Capitalised
 	}
+
+	public static void baseValues(){
+		int octal = 017; //starts with 0, other digits 1-7
+		int hexadecimal = 0xFF; //0-9, then x or X, then A-F
+		int binary = 0b10; //0, then b or B, then 1 or 0s
+
+	}
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary
