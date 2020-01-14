@@ -11,7 +11,68 @@
  */
 public class LogicalOperators
 {
+	static boolean a = true, b = false, c = true, d = false;
+
+	public static void main(String[] args)
+	{
+		AND();
+		InclusiveOR();
+		ExclusiveOR();
+		shortCircuts();
+	}
+
+	public static void AND()
+	{
+		//AND is only true if both operands are true
+		System.out.println(a & b);
+		System.out.println(b & d);
+		System.out.println(a & c);
+
+	}
+
+	public static void InclusiveOR()
+	{
+		// Inclusive OR is only false if both operands are false
+		System.out.println(a | b);
+		System.out.println(a | c);
+		System.out.println(b | d);
+
+	}
+
+	public static void ExclusiveOR()
+	{
+		// only true if both operands are different
+		System.out.println(a ^ b);
+		System.out.println(a ^ c);
+		System.out.println(a ^ d);
+	}
+
+	public static void shortCircuts()
+	{
+		boolean x = true, y = false;
+		if (y || x)
+		{
+			System.out.println(1);
+		}
+		if (x || y)
+		{
+			System.out.println(2);
+		}
+		if (x && y)
+		{
+			System.out.println(5);
+		}
+		if (y && x)
+		{
+			System.out.println(4);
+		}
+		//&& if lhs is true, will then evaluate RHS
+
+		//|| if lhs is false, will then evaulate RHS
+
+	}
 }
+
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary
  * information of Lhasa Limited

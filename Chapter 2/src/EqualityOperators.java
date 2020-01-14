@@ -5,38 +5,30 @@
  * Version : $
  */
 
+import java.io.File;
+
 /**
  * @author Mark Nolan
  * @since 09 Jan 2020
  */
-public class UnaryOperators
+public class EqualityOperators
 {
 	public static void main(String[] args)
 	{
-//		System.out.println(!true);
-//		double x = 3;
-//		x = -x;
-//		System.out.println(x);
-//
-//		int a = 3;
-//		int b = ++a * 5 / a-- + --a;
-//		System.out.println("a is " + a);
-//		System.out.println("b is " + b);
-		PreandPostOperators();
-	}
+		//== equals operator
+		System.out.println(5==5.0);//returns true as int promoted to double
+		//compare boolen values
+		System.out.println(true==false);
+		//compare objects including null and string
+		System.out.println("boo"=="boo");
+		//cant mix and match types e.g.
+//		System.out.println(true=="boo");
 
-	public static void PreandPostOperators()
-	{
-		//if pre operator is applied first and value returned is new value
-		int x = 3;
-		System.out.println(x);
-		System.out.println(++x);
-		System.out.println(x);
-		//if post - orginal value is returned then operand is applied afterwards
-		int y = 3;
-		System.out.println(y);
-		System.out.println(y++);
-		System.out.println(y);
+		File x = new File("myFile.txt");
+		File y = new File("myFile.txt");
+		File z = x;
+		System.out.println(x == y); //references only equal if both point to null or are the same object
+		System.out.println(x == z);
 	}
 }
 /* ---------------------------------------------------------------------*
