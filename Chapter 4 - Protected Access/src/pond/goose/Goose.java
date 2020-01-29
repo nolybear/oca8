@@ -4,30 +4,30 @@
  * Creator : Mark Nolan
  * Version : $
  */
+package pond.goose;
+
+import pond.shore.Bird;
 
 /**
  * @author Mark Nolan
  * @since 29 Jan 2020
  */
-public class Methods
+public class Goose extends Bird
 {
-	public static int count = 0;
-	public static void main(String[] args)
+	public void helpGooseSwim()
 	{
-		System.out.println(count);
-
+		Goose other = new Goose();
+		other.floatInWater();
+		System.out.println(other.text);
 	}
 
-	//can use varargs
-	public void walk1(int... num){};
-	public void walk2 (int start, int...nums){}
-//	public void walk3(int...nums, int start) {}; varargs has to be at end of list
-//	public void walk4(int...start, int... nums) {}; vararg in a position not at end.
+	public void helpOtherGooseSwim()
+	{
+		Bird other = new Goose(); //object is a goose stored in a bird variable
+		//cant refer to members of bird class since we are not in the same package, and Bird is not a subclass of Bird
+//		other.floatInWater();
 
-	//access modifers
-	//private - only accessible within same class.
-	//modfiers are optional. if not included the default is package private (any classes within same package can use it)
-
+	}
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary

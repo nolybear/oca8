@@ -4,30 +4,20 @@
  * Creator : Mark Nolan
  * Version : $
  */
+package pond.shore;
 
 /**
  * @author Mark Nolan
  * @since 29 Jan 2020
  */
-public class Methods
+public class BirdWatcher //same package as Bird, so no need to extend
 {
-	public static int count = 0;
-	public static void main(String[] args)
+	public void watchBird()
 	{
-		System.out.println(count);
-
+		Bird bird = new Bird();
+		bird.floatInWater();
+		System.out.println(bird.text);
 	}
-
-	//can use varargs
-	public void walk1(int... num){};
-	public void walk2 (int start, int...nums){}
-//	public void walk3(int...nums, int start) {}; varargs has to be at end of list
-//	public void walk4(int...start, int... nums) {}; vararg in a position not at end.
-
-	//access modifers
-	//private - only accessible within same class.
-	//modfiers are optional. if not included the default is package private (any classes within same package can use it)
-
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary

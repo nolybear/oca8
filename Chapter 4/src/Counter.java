@@ -9,25 +9,19 @@
  * @author Mark Nolan
  * @since 29 Jan 2020
  */
-public class Methods
+public class Counter
 {
-	public static int count = 0;
-	public static void main(String[] args)
+	private static int count;
+	public Counter() {count++;};
+
+	public static void haha()
 	{
-		System.out.println(count);
-
+		Counter c1 = new Counter();
+		Counter c2 = new Counter();
+		Counter c3 = new Counter();
+		System.out.println(count); //in same class so can use count
+		//three is produced - each time constructor (COunter()) is called, increments count by 1;
 	}
-
-	//can use varargs
-	public void walk1(int... num){};
-	public void walk2 (int start, int...nums){}
-//	public void walk3(int...nums, int start) {}; varargs has to be at end of list
-//	public void walk4(int...start, int... nums) {}; vararg in a position not at end.
-
-	//access modifers
-	//private - only accessible within same class.
-	//modfiers are optional. if not included the default is package private (any classes within same package can use it)
-
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary

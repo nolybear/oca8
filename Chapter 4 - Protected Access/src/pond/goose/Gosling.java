@@ -4,30 +4,23 @@
  * Creator : Mark Nolan
  * Version : $
  */
+package pond.goose;
+
+import pond.shore.Bird;
 
 /**
  * @author Mark Nolan
  * @since 29 Jan 2020
  */
-public class Methods
+public class Gosling extends Bird //extending allows access to any public or protected members from its parent
+	//the parent in this case being goose (so couldn't get anything from any other chapter modules)
+	//different package then bird (but same parent)
 {
-	public static int count = 0;
-	public static void main(String[] args)
+	public void swim()
 	{
-		System.out.println(count);
-
+		floatInWater();
+		System.out.println(text);
 	}
-
-	//can use varargs
-	public void walk1(int... num){};
-	public void walk2 (int start, int...nums){}
-//	public void walk3(int...nums, int start) {}; varargs has to be at end of list
-//	public void walk4(int...start, int... nums) {}; vararg in a position not at end.
-
-	//access modifers
-	//private - only accessible within same class.
-	//modfiers are optional. if not included the default is package private (any classes within same package can use it)
-
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary

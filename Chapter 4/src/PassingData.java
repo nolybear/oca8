@@ -9,25 +9,31 @@
  * @author Mark Nolan
  * @since 29 Jan 2020
  */
-public class Methods
+public class PassingData
 {
-	public static int count = 0;
 	public static void main(String[] args)
 	{
-		System.out.println(count);
+		String name = "Webby";
+		speak(name);
+		System.out.println(name); //returns webby and not sparky - java makes a copy of variable and method recives copy
+		//assignments made in method do not affect caller
+
+		StringBuilder name1 = new StringBuilder();
+		speak(name1);
+		System.out.println(name1); //in this case, both name1 and s refer to same object
+		// calls a method on the parameter, rather than trying to change the variable itself
 
 	}
 
-	//can use varargs
-	public void walk1(int... num){};
-	public void walk2 (int start, int...nums){}
-//	public void walk3(int...nums, int start) {}; varargs has to be at end of list
-//	public void walk4(int...start, int... nums) {}; vararg in a position not at end.
+	public static void speak (String name)
+	{
+		name = "sparky";
+	}
 
-	//access modifers
-	//private - only accessible within same class.
-	//modfiers are optional. if not included the default is package private (any classes within same package can use it)
-
+	public static void speak (StringBuilder s)
+	{
+		s.append("Webby");
+	}
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary
