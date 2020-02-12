@@ -9,12 +9,8 @@
  * @author Mark Nolan
  * @since 29 Jan 2020
  */
-public class OrderOfInitialization
+public class ImmutableClasses
 {
-	//superclass
-	//static variable decleartions and static inizaliers
-	//instance variable declarations
-	// constructor
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary

@@ -1,20 +1,37 @@
 /**
  * Copyright © 2019 Lhasa Limited
- * File created: 29 Jan 2020 by Mark Nolan
+ * File created: 06 Feb 2020 by Mark Nolan
  * Creator : Mark Nolan
  * Version : $
  */
 
 /**
  * @author Mark Nolan
- * @since 29 Jan 2020
+ * @since 06 Feb 2020
  */
-public class OrderOfInitialization
+
+class Primate{
+	public Primate() {
+		//super() inserted by compiler
+		System.out.println("Primate");
+	}
+}
+
+class Ape extends Primate
 {
-	//superclass
-	//static variable decleartions and static inizaliers
-	//instance variable declarations
-	// constructor
+	public Ape(){
+		//super() inserted by compiler
+		System.out.println("Ape");
+	}
+}
+public class CallingConstructors extends Ape
+{
+	//inserts a default no arg constructor with super as first statement
+	public static void main(String[] args)
+	{
+		new CallingConstructors();
+		//parent will always be called first
+	}
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary

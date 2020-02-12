@@ -1,20 +1,30 @@
 /**
  * Copyright © 2019 Lhasa Limited
- * File created: 29 Jan 2020 by Mark Nolan
+ * File created: 12 Feb 2020 by Mark Nolan
  * Creator : Mark Nolan
  * Version : $
  */
 
 /**
  * @author Mark Nolan
- * @since 29 Jan 2020
+ * @since 12 Feb 2020
  */
-public class OrderOfInitialization
+public class InheritingVariables
 {
-	//superclass
-	//static variable decleartions and static inizaliers
-	//instance variable declarations
-	// constructor
+	protected int tailLength = 4;
+	public void getInheritingVariablesTailLength()
+	{
+		System.out.println(String.format("[parentTail=%s]",tailLength));
+	}
+
+	class variable extends InheritingVariables
+	{
+		protected int tailLength = 8;
+		public void getVariableTailLength()
+		{
+			System.out.println(String.format("[tail=%s],[parentTail=%s]",tailLength,super.tailLength));
+		}
+	}
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary

@@ -1,20 +1,30 @@
 /**
  * Copyright © 2019 Lhasa Limited
- * File created: 29 Jan 2020 by Mark Nolan
+ * File created: 06 Feb 2020 by Mark Nolan
  * Creator : Mark Nolan
  * Version : $
  */
 
 /**
  * @author Mark Nolan
- * @since 29 Jan 2020
+ * @since 06 Feb 2020
  */
-public class OrderOfInitialization
+class AccessModifiers
+		//default package private, accsed by subclass or class within the same package
 {
-	//superclass
-	//static variable decleartions and static inizaliers
-	//instance variable declarations
-	// constructor
+	// can use final to prevent a class from being extended
+	//if in same package, do not require an import
+
+	//can only have one public class per java file, but as many other classer
+public class modifer extends AccessModifiers
+	{
+
+	}
+
+	public class mark extends java.lang.Object
+	{
+		//all classes by default extends this (but is not displayed
+	}
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary

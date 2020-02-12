@@ -1,20 +1,20 @@
 /**
  * Copyright © 2019 Lhasa Limited
- * File created: 29 Jan 2020 by Mark Nolan
+ * File created: 06 Feb 2020 by Mark Nolan
  * Creator : Mark Nolan
  * Version : $
  */
 
 /**
  * @author Mark Nolan
- * @since 29 Jan 2020
+ * @since 06 Feb 2020
  */
-public class OrderOfInitialization
+public class Lambdas
 {
-	//superclass
-	//static variable decleartions and static inizaliers
-	//instance variable declarations
-	// constructor
+	// can use final to prevent a class from being extended
+	//if in same package, do not require an import
+
+
 }
 /* ---------------------------------------------------------------------*
  * This software is the confidential and proprietary
